@@ -1,0 +1,53 @@
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width:100%;
+}
+a {
+  text-decoration: none;
+}
+$color-bg-dark: #111;
+$color-border-light: #fff;
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: $color-bg-dark;
+  display: flex;
+  gap: 5px;
+
+  .box {
+    flex-grow: 1;
+    height: 100%;
+    border: 1px solid $color-border-light;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    &:hover {
+      flex-grow: 3;
+    }
+
+  
+  }
+}
+
+
+$images: (
+  1: "https://i.pinimg.com/736x/26/cf/19/26cf19736264ee256addc9aed7a0c61a.jpg",
+  2: "https://i.pinimg.com/1200x/d4/cc/0a/d4cc0ac3b1f24cbdf300915a816ff298.jpg",
+  3: "https://i.pinimg.com/736x/52/a6/f0/52a6f0b442ce950e4c4f4e87e2428597.jpg",
+  4: "https://i.pinimg.com/736x/fd/82/21/fd82214aaddc196cd9c532913dc04d36.jpg",
+  5: "https://i.pinimg.com/1200x/8b/a6/81/8ba6816f7afaa162dce462cfa11aa4d7.jpg"
+);
+
+@each $index, $url in $images {
+  .box:nth-child(#{$index}) {
+    background-image: url(#{$url});
+  }
+}
