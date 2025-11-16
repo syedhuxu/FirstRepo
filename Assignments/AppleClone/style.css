@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);
+}
+
+header {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  gap: 2rem;
+}
+header nav #logo {
+  opacity: 0.8;
+}
+header nav .links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+header nav .links h5 {
+  font-weight: 400;
+  opacity: 0.8;
+}
+header nav .icons {
+  display: flex;
+  gap: 1.5rem;
+}
+header nav .icons i {
+  opacity: 0.8;
+}
+header nav .icons #bars {
+  display: none;
+}
+
+@media (max-width: 834px) {
+  header nav {
+    padding: 0.8rem 1.2rem;
+    justify-content: space-between;
+  }
+  header nav .links {
+    display: none;
+  }
+  header nav #logo,
+  .icons i {
+    font-size: 1.2rem;
+  }
+  header nav .icons #bars {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  header nav {
+    padding: 1rem 11rem;
+  }
+}
+main {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+main .hero-section {
+  width: 100%;
+}
+main .hero-section .upper {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .hero-section .upper p {
+  text-align: center;
+  color: #1d1d1f;
+  font-weight: 400;
+}
+main .hero-section .middle {
+  padding: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+main .hero-section .middle h1 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  opacity: 0.99;
+  color: #1d1d1f;
+}
+main .hero-section .middle .products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  padding: 0px 1.2rem 0px 0px;
+}
+main .hero-section .middle .products::-webkit-scrollbar {
+  display: none;
+}
+main .hero-section .middle .phone {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+main .hero-section .middle .phone img {
+  width: 3.6rem;
+}
+main .hero-section .middle .phone h5 {
+  font-weight: 400;
+}
+main .hero-section .middle .phone a {
+  color: red;
+}
+main .hero-section .bottom {
+  background-color: #f5f5f7;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+main .hero-section .bottom .title {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+main .hero-section .bottom .title h2 {
+  font-size: 1.9rem;
+  color: #1d1d1f;
+  opacity: 0.99;
+  font-weight: 600;
+}
+main .hero-section .bottom .wrapper {
+  display: flex;
+  overflow: auto;
+  gap: 0.7rem;
+}
+main .hero-section .bottom .wrapper .card {
+  padding: 0 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hero-section .bottom .wrapper .card img {
+  width: 17.5rem;
+  border-radius: 2rem;
+}
+main .hero-section .bottom .wrapper .card .name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .hero-section .bottom .wrapper .card .name h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: 0.99;
+}
+main .hero-section .bottom .wrapper .card .name p {
+  font-size: 1.1rem;
+  opacity: 0.99;
+}
+main .hero-section .bottom .wrapper .card .prices p {
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+main .hero-section .bottom .wrapper .card .buttons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+main .hero-section .bottom .wrapper .card .buttons button {
+  padding: 0.6rem 1.6rem;
+  border-radius: 3rem;
+  color: #ffffff;
+  background-color: #0071e3;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+main .hero-section .bottom .wrapper::-webkit-scrollbar {
+  display: none;
+}
+main .section2 {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 5rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section2 h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1d1d1f;
+  opacity: 0.99;
+}
+main .section2 .apple-hero {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #e4e6e8, #ff9248);
+  overflow: hidden;
+}
+main .section2 .apple-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 2.3rem;
+}
+main .section2 .apple-hero .hero-content h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 1;
+}
+main .section2 .apple-hero .hero-content button {
+  background-color: #1d1d1f;
+  color: #fff;
+  padding: 0.9rem 1.9rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  opacity: 0.99;
+}
+main .section2 .apple-hero .hero-image {
+  overflow: hidden;
+}
+main .section2 .apple-hero .hero-image img {
+  width: 18rem;
+}
+
+@media (min-width: 768px) {
+  main .hero-section .middle {
+    padding: 1rem 8rem 0.6rem 3.5rem;
+  }
+  main .hero-section .middle h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+  main .hero-section .middle .products .phone img {
+    width: 3.5rem;
+  }
+  main .hero-section .middle .products {
+    gap: 5rem;
+  }
+  main .hero-section .bottom {
+    gap: 3rem;
+    padding: 7rem 0 0 0;
+  }
+  main .hero-section .bottom .title {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .hero-section .bottom .title h2 {
+    font-size: 3.1rem;
+    font-weight: 600;
+  }
+  main .hero-section .bottom .title a {
+    font-size: 1.1rem;
+  }
+  main .hero-section .bottom .wrapper {
+    gap: 0rem;
+  }
+  main .hero-section .bottom .wrapper .card {
+    gap: 2rem;
+  }
+  main .hero-section .bottom .wrapper .card img {
+    width: 22.4rem;
+  }
+  main .hero-section .bottom .wrapper .card .name,
+  main .hero-section .bottom .wrapper .prices {
+    align-items: center;
+  }
+  main .hero-section .bottom .wrapper .name h3,
+  main .hero-section .bottom .wrapper p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  main .hero-section .bottom .wrapper .card .buttons {
+    justify-content: center;
+    gap: 3rem;
+  }
+  main .hero-section .bottom .wrapper .card .buttons button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+  main .hero-section .bottom .wrapper .card .buttons a {
+    font-size: 1rem;
+  }
+  main .section2 {
+    padding: 5rem 2rem 4rem 3rem;
+  }
+  main .section2 h2 {
+    font-size: 3.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .hero-section .middle {
+    padding: 2rem 1rem 2rem 2rem;
+  }
+  main .hero-section .middle h1 {
+    padding: 0 1rem;
+  }
+  main .hero-section .middle .products {
+    padding: 0 4rem 0 4rem;
+    gap: 5rem;
+  }
+  main .hero-section .middle .products .phone img {
+    width: 3.99rem;
+  }
+  main .hero-section .bottom {
+    padding: 4rem 0 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  main .section2 .apple-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7rem 9rem;
+  }
+  main .section2 .apple-hero .hero-content h2 {
+    font-size: 2.2rem;
+  }
+  main .section2 .apple-hero .hero-image img {
+    width: 25rem;
+  }
+}
+@media (min-width: 1440px) {
+  main .hero-section .middle h1 {
+    padding: 0 3.5rem;
+  }
+  main .hero-section .middle .products {
+    align-items: center;
+    padding: 1rem 7rem;
+    gap: 1rem;
+  }
+  main .hero-section .bottom {
+    padding: 6rem 0 0 0;
+  }
+  main .hero-section .bottom .title {
+    padding: 0 5rem;
+  }
+  main .hero-section .bottom .wrapper {
+    padding-left: 3rem;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=style.css.map */
