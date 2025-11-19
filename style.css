@@ -295,8 +295,8 @@ main .section3 .wrapper .card {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  padding: 1rem 0;
-  background-color: #ffffff;
+  padding: 1rem 0 0 0;
+  background-color: #fff;
   border-radius: 1.8rem;
 }
 main .section3 .wrapper .card #card-title {
@@ -317,6 +317,71 @@ main .section3 .wrapper .card #card-prices {
 main .section3 .wrapper .card img {
   width: 19rem;
   flex-shrink: 0;
+  border-radius: 1.8rem;
+}
+main .section4 {
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 5rem 0 2rem 0;
+}
+main .section4 h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+main .section4 .wrapper {
+  display: flex;
+  gap: 1.5rem;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+main .section4 .wrapper::-webkit-scrollbar {
+  display: none;
+}
+main .section4 .wrapper .card {
+  display: flex;
+  flex-direction: column;
+  gap: 19rem;
+  background-image: url(https://www.apple.com/in/iphone/home/images/overview/select/iphone_17pro__0s6piftg70ym_small_2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+  border-radius: 2rem;
+  flex-shrink: 0;
+}
+main .section4 .wrapper .card .upper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+main .section4 .wrapper .card .upper h2 {
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+main .section4 .wrapper .card .upper h3 {
+  padding: 0 1.5rem;
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+main .section4 .wrapper .card .lower {
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+}
+main .section4 .wrapper .card .lower i {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #1d1d1f;
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {
