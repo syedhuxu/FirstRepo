@@ -334,9 +334,10 @@ main {
     }
     .wrapper {
       display: flex;
-      gap: 1.5rem;
       overflow: auto;
       flex-wrap: nowrap;
+      gap: 1.5rem;
+
       &::-webkit-scrollbar {
         display: none;
       }
@@ -344,13 +345,15 @@ main {
         display: flex;
         flex-direction: column;
         gap: 19rem;
-        background-image: url(https://www.apple.com/in/iphone/home/images/overview/select/iphone_17pro__0s6piftg70ym_small_2x.jpg);
+        background-image: url(https://i.pinimg.com/736x/46/bf/9a/46bf9a5f49b0af28725aac52ae91fc22.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        margin-left: 1rem;
         border-radius: 2rem;
         flex-shrink: 0;
+        &:nth-child(1) {
+          margin-left: 1rem;
+        }
 
         .upper {
           display: flex;
@@ -365,7 +368,7 @@ main {
           h3 {
             padding: 0 1.5rem;
             color: #ffffff;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             font-weight: 600;
           }
         }
@@ -480,6 +483,29 @@ main {
       }
     }
   }
+  main .section4 {
+    h2 {
+      font-size: 3rem;
+      padding: 0 3rem;
+    }
+    .wrapper {
+      .card {
+        width: 21.3rem;
+        &:nth-child(1) {
+          margin-left: 3rem;
+        }
+        .upper {
+          h2 {
+            font-size: 1.2rem;
+          }
+          h3 {
+            font-size: 1.6rem;
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1024px) {
   main .hero-section .middle {
@@ -499,6 +525,25 @@ main {
   }
   main .hero-section .bottom {
     padding: 4rem 0 0 0;
+  }
+  main .section4 {
+    .wrapper {
+      .card {
+        width: 24rem;
+        &:nth-child(1) {
+          margin-left: 4rem;
+        }
+        .upper {
+          h2 {
+            font-size: 1.4rem;
+          }
+          h3 {
+            font-size: 1.8rem;
+            padding: 0 1.5rem;
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1200px) {
