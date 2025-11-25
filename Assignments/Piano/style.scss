@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.piano {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 12px;
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.key {
+  background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+  border-radius: 18px;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7),
+    inset 0 -6px 10px rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15),
+      inset 0 -7px 12px rgba(255, 255, 255, 0.15);
+  }
+
+  &.active {
+    transform: scale(0.92);
+    background: linear-gradient(145deg, #ff0077, #550033);
+    box-shadow: 0 0 25px #ff0066, inset 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.wide {
+  grid-column: span 1;
+  padding: 30px 0;
+}
+
+.num {
+  background: linear-gradient(145deg, #111, #000);
+}
+
+/* thodiu si responsiveness */
+@media (max-width: 768px) {
+  .piano {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .piano {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
