@@ -447,6 +447,61 @@ main {
       }
     }
   }
+  .section6 {
+    padding: 2rem 0;
+
+    h2 {
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: #f5f5f7;
+      border-radius: 2rem;
+      align-items: center;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .ist {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+          p {
+            font-size: 1rem;
+            opacity: 0.7;
+            text-align: start;
+          }
+        }
+        .second {
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+        }
+        .third {
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+        }
+      }
+      .right {
+        img {
+          width: 20rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -598,6 +653,36 @@ main {
       }
     }
   }
+  main .section6 {
+    padding: 2rem 3rem;
+    h2 {
+      opacity: 0.99;
+      font-size: 3rem;
+    }
+    .card {
+      padding: 4rem 4rem 4rem 2rem;
+      .left {
+        .ist {
+          h3 {
+            font-size: 1.9rem;
+          }
+          p {
+            font-size: 1.3rem;
+          }
+        }
+        .second h3 {
+          font-size: 1.9rem;
+        }
+        .third h3 {
+          font-size: 1.9rem;
+        }
+      }
+      .right img {
+        width: 33rem;
+        object-fit: cover;
+      }
+    }
+  }
 }
 @media (min-width: 1024px) {
   main .hero-section .middle {
@@ -720,7 +805,40 @@ main {
         p {
           font-size: 1.3rem;
           width: 28rem;
+          object-fit: cover;
         }
+      }
+    }
+  }
+  main .section6 {
+    padding: 3rem 3rem 3rem 5rem;
+    h2 {
+      font-size: 3.5rem;
+      opacity: 0.79;
+    }
+    .card {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 4rem 0 4rem 4rem;
+      .left {
+        .ist {
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.1rem;
+          }
+        }
+        .second h3 {
+          font-size: 2rem;
+        }
+        .third h3 {
+          font-size: 2rem;
+        }
+      }
+      .right img {
+        width: 50rem;
+        object-fit: cover;
       }
     }
   }
